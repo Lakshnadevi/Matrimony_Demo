@@ -1,0 +1,39 @@
+<div class="header">
+   
+    <button class="menu-icon" (click)="navigatetoHome()">&#x2B05;</button>
+</div>
+
+<div class="container">
+    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" *ngFor="let testimonial of testimonials; let i = index" [ngClass]="{'active': i === 0}">
+                <div class="info-widget d-flex justify-content-center">
+                    <div class="card"> 
+                        <img [src]="testimonial.imageUrl" alt="{{ testimonial.name }}" class="testimonial-image" />
+                        <div class="card-body">
+                            <h3>{{ testimonial.name }}</h3>
+                            <p class="card-text">
+                                {{ testimonial.age }}, {{ testimonial.height }}, {{ testimonial.community }},
+                                {{ testimonial.profession }}, {{ testimonial.city }}, {{ testimonial.state }},
+                                {{ testimonial.country }}
+                            </p>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="yes-btn">Yes</button>
+                            <button class="no-btn">No</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

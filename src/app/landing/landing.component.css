@@ -1,0 +1,149 @@
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+.new {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.middle {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: calc(250px * 3 + 30px); 
+}
+
+.card-wrapper {
+  display: flex; 
+  transition: transform 0.5s ease;
+}
+
+
+.middle::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  width: 250px;
+  height: 450px; 
+  margin-right: 15px; 
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  overflow: hidden; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 15px; 
+  text-align: center;
+}
+
+.card-body h3 {
+  font-size: 18px; 
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px; 
+  color: #777;
+  font-family: 'Roboto', sans-serif;
+  line-height: 0.5em;
+    text-align: left;
+  overflow: visible; 
+  text-overflow: ellipsis; 
+  word-wrap: break-word;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.yes-btn, .no-btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.yes-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.no-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.yes-btn:hover {
+  background-color: #45a049;
+}
+
+.no-btn:hover {
+  background-color: #e53935;
+}
+
+.scroll-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-btn:hover {
+  background-color: #555;
+}

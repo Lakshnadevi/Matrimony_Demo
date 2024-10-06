@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Hari",
+    "age": 25,
+    "height": "5 ft 4 inch",
+    "community": "Malayalam, Nair",
+    "profession": "Chartered Accountant",
+    "city": "Kochi",
+    "state": "Kerala",
+    "country": "India",
+    "imageUrl": "assets/img/Np.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Radhika",
+    "age": 30,
+    "height": "5 ft 10 inch",
+    "community": "Telugu, Brahmin",
+    "profession": "Software Engineer",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India",
+    "imageUrl": "assets/img/Jothika.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Srimathi",
+    "age": 28,
+    "height": "6 ft",
+    "community": "Kannada, Lingayat",
+    "profession": "Civil Engineer",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "imageUrl": "assets/img/Samantha.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Priyanka",
+    "age": 27,
+    "height": "5 ft 2 inch",
+    "community": "Tamil, Nair",
+    "profession": "MBBS, Doctor",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "imageUrl": "assets/img/Nayanthara.jpg"
+  },
+  
+  {
+    "id": 5,
+    "name": "Meera",
+    "age": 26,
+    "height": "5 ft 5 inch",
+    "community": "Gujarati, Patel",
+    "profession": "Marketing Manager",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India",
+    "imageUrl": "assets/img/Trishna.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Meera1",
+    "age": 26,
+    "height": "5 ft 5 inch",
+    "community": "Gujarati, Patel",
+    "profession": "Marketing Manager",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India",
+    "imageUrl": "assets/img/Jothika.jpg"
+  }
+]

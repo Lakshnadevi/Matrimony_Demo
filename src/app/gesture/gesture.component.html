@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="header">
+    <button class="back-button" (click)="navigatetoHome()">&#x2B05;</button> 
+
+    <h1>Daily Recommendations</h1>
+  </div>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let testimonial of testimonials; let i = index" class="card"
+    [class.active]="i === activeIndex" 
+    [class.swipe-left]="swipeDirection === 'left' && i === activeIndex" 
+    [class.swipe-right]="swipeDirection === 'right' && i === activeIndex">
+      <img class="card-image" [src]="testimonial.imageUrl" alt="Profile Picture" />
+      
+      <div class="badge-section">
+        <span class="badge verified">Verified</span>
+        <span class="badge premium">Premium NRI</span>
+      </div>
+
+      <div class="card-content">
+        <h2 class="name">{{ testimonial.name }}</h2>
+        <p class="details">
+          {{ testimonial.age }} Yrs, {{ testimonial.height }}, {{ testimonial.profession }},
+          {{ testimonial.community }}, {{ testimonial.city }}, {{ testimonial.state }},
+          {{ testimonial.country }}.
+        </p>
+      </div>
+
+      <div class="button-container">
+        <span class="shortlist-text">&#9734; Shortlist</span>
+        <span class="like-text"><strong>Like her?</strong></span>
+        <button class="action-button dislike-button" 
+                [ngClass]="{'highlighted': isDisliked}" 
+                (click)="dislikeProfile()">✕</button>
+        <button class="action-button like-button" 
+                [ngClass]="{'highlighted': isLiked}" 
+                (click)="likeProfile()">✓</button>
+    </div>
+    
+    
+    </div>
+  </div>
+</div>
