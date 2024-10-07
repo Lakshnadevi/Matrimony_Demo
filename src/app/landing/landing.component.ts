@@ -2,7 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ProfileService } from '../services/profile.service';
 import { Router } from '@angular/router';
 import { Testimonial } from '../testimonial.model';
-
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -11,10 +11,11 @@ import { Testimonial } from '../testimonial.model';
 export class LandingComponent implements OnInit {
   testimonials: Testimonial[] = [];
   currentIndex: number = 0; 
-
+  isLiked: boolean = false;
+  isDisliked: boolean = false;
   @ViewChild('widgetsContent') widgetsContent!: ElementRef;
 
-  constructor(private profileservice: ProfileService, private router: Router) {}
+  constructor(private profileservice: ProfileService, private router: Router,private toastr: ToastrService) {}
 
   ngOnInit(): void {
     this.profileservice.getTestimonials().subscribe((data) => {
@@ -34,7 +35,18 @@ export class LandingComponent implements OnInit {
       this.currentIndex -= 1; 
     }
   }
+  likeProfile(): void {
+   
+    this.isLiked = true;
+    this.isDisliked = false;
+  }
 
+  dislikeProfile(profileId: number): void {
+    this.testimonials = this.testimonials.filter(testimonial => testimonial.id !== profileId);
+    this.toastr.success('Profile removed successfully!', 'Success');
+    this.isDisliked = true;
+    this.isLiked = false; 
+  }
   navigateToGestureScreen() {
     this.router.navigate(['/gesture']);
   }

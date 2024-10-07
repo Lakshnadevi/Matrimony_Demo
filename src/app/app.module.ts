@@ -7,6 +7,7 @@ import { GestureComponent } from './gesture/gesture.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LandingComponent
   ],
   imports: [
-  
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot(),
     HammerModule,
     BrowserModule,
     AppRoutingModule,

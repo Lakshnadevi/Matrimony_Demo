@@ -1,6 +1,6 @@
 <div class="header">
    
-    <button class="menu-icon" (click)="navigatetoHome()">&#x2B05;</button>
+    <button class="menu-icon" (click)="navigatetoHome()"><i class="fa-solid fa-chevron-left"></i></button>
 </div>
 
 <div class="container">
@@ -10,7 +10,7 @@
                 <div class="info-widget d-flex justify-content-center">
                     <div class="card"> 
                         <img [src]="testimonial.imageUrl" alt="{{ testimonial.name }}" class="testimonial-image" />
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: left;">
                             <h3>{{ testimonial.name }}</h3>
                             <p class="card-text">
                                 {{ testimonial.age }}, {{ testimonial.height }}, {{ testimonial.community }},
@@ -20,7 +20,7 @@
                         </div>
                         <div class="action-buttons">
                             <button class="yes-btn">Yes</button>
-                            <button class="no-btn">No</button>
+                            <button class="no-btn" (click)="dislikeProfile(testimonial.id)">No</button>
                         </div>
                     </div> 
                 </div>

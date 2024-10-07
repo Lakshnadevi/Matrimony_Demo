@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Hari",
+    "name": "Hari Krishna",
     "age": 25,
     "height": "5 ft 4 inch",
     "community": "Malayalam, Nair",
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "name": "Radhika",
+    "name": "Radhika Sree",
     "age": 30,
     "height": "5 ft 10 inch",
     "community": "Telugu, Brahmin",
@@ -21,11 +21,11 @@
     "city": "Hyderabad",
     "state": "Telangana",
     "country": "India",
-    "imageUrl": "assets/img/Jothika.jpg"
+    "imageUrl": "assets/img/trish_updated.jpg"
   },
   {
     "id": 3,
-    "name": "Srimathi",
+    "name": "Srimathi Nair",
     "age": 28,
     "height": "6 ft",
     "community": "Kannada, Lingayat",
@@ -33,11 +33,11 @@
     "city": "Bengaluru",
     "state": "Karnataka",
     "country": "India",
-    "imageUrl": "assets/img/Samantha.jpg"
+    "imageUrl": "assets/img/sai_updated.jpg"
   },
   {
     "id": 4,
-    "name": "Priyanka",
+    "name": "Arun kumaran",
     "age": 27,
     "height": "5 ft 2 inch",
     "community": "Tamil, Nair",
@@ -45,12 +45,12 @@
     "city": "Chennai",
     "state": "Tamil Nadu",
     "country": "India",
-    "imageUrl": "assets/img/Nayanthara.jpg"
+    "imageUrl": "assets/img/surya.jpg"
   },
   
   {
     "id": 5,
-    "name": "Meera",
+    "name": "Meera Jasmine",
     "age": 26,
     "height": "5 ft 5 inch",
     "community": "Gujarati, Patel",
@@ -58,18 +58,6 @@
     "city": "Ahmedabad",
     "state": "Gujarat",
     "country": "India",
-    "imageUrl": "assets/img/Trishna.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Meera1",
-    "age": 26,
-    "height": "5 ft 5 inch",
-    "community": "Gujarati, Patel",
-    "profession": "Marketing Manager",
-    "city": "Ahmedabad",
-    "state": "Gujarat",
-    "country": "India",
-    "imageUrl": "assets/img/Jothika.jpg"
+    "imageUrl": "assets/img/img1.jpg"
   }
 ]
